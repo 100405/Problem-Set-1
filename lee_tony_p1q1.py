@@ -19,6 +19,8 @@ if ans == 13:
 else:
     print("Incorrect ;=;")
     score = score
+
+# Math Question
 print("What is 98 + 7")
 ans = float(input())
 if ans == 105:
