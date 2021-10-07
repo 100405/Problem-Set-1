@@ -27,9 +27,7 @@ else:
     print("Incorrect ;=;")
     print(f"You got {score_now}/2 questions correct so far")
     score_now = score_now
-
-# Math Question
-print("What is 98 + 7")
+print("The statue of liberty is the current tallest structure on Earth as of 2021 October.")
 ans = float(input())
 if ans == 105:
     print("Correct!")
