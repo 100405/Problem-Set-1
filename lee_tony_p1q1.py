@@ -1,7 +1,6 @@
 # Quiz Creation Activity
 
 # The user will talk a quiz
-#
 import time
 from rich import print
 score_now = 0
@@ -11,12 +10,12 @@ ans = float(input())
 if ans == 7:
     score_now = score_now + 1
     print("Correct!")
-    print(f"You got {score_now}/1 questions correct so far")
-    score_now = score_now + 1
 else:
     print("Incorrect ;=;")
-    print("You got {score_now}/1 questions correct so far")
-    score_now = score_now
+if score_now == 1：
+    print(f"You got 1 question correct so far!")
+else:
+    print("You got {score_now} questions correct so far."
 print("What is the colour of the colour red?")
 ans = input()
 if ans == "red":
