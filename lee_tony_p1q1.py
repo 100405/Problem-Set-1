@@ -82,6 +82,6 @@ else:
     print(f"You got {score_now} questions correct so far!")
 
 print("Congratulations! you have finished the quiz!")
-print(f"You got {score_now} questions out of 5 questions correct and a percentage of {(score_now / 5) * 100}&!")
+print(f"You got {score_now} questions out of 5 questions correct and a percentage of {(score_now / 5) * 100}%!")
 
 
