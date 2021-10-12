@@ -1,38 +1,87 @@
 # Quiz Creation Activity
 
-# The user will talk a quiz
-#
 import time
 from rich import print
 score_now = 0
+
+# Question 1
 
 print("What is 2 + 5")
 ans = float(input())
 if ans == 7:
     score_now = score_now + 1
     print("Correct!")
-    print(f"You got {score_now}/1 questions correct so far")
-    score_now = score_now + 1
 else:
     print("Incorrect ;=;")
-    print("You got {score_now}/1 questions correct so far")
     score_now = score_now
+if score_now == 1:
+    print(f"You got 1 question correct so far!")
+else:
+    print(f"You got {score_now} questions correct so far.")
+
+# Question 2
+
 print("What is the colour of the colour red?")
-ans = input()
+ans = input().lower()
 if ans == "red":
     score_now = score_now + 1
     print("Correct!")
-    print(f"You got {score_now}/2 questions correct so far")
 else:
     print("Incorrect ;=;")
-    print(f"You got {score_now}/2 questions correct so far")
     score_now = score_now
-print("The statue of liberty is the current tallest structure on Earth as of 2021 October.")
-ans = float(input())
-if ans == 105:
-    print("Correct!")
+if score_now == 1:
+    print("You got 1 question correct so far!")
+else:
+    print(f"You got {score_now} questions correct so far!")
 
+# Question 3
+
+print("What is 8 + 12?")
+ans = float(input())
+if ans == 20:
+    print("Correct!")
+    score_now = score_now + 1
 else:
     print("Incorrect ;=;")
-    score = score
-print(score)
+    score_now = score_now
+if score_now == 1:
+    print("You got 1 question correct so far!")
+else:
+    print(f"You got {score_now} questions correct so far!")
+
+# Question 4
+
+print("what is 20.9 - 7.2?")
+ans = float(input())
+if ans == 13.7:
+    print("Correct!")
+    score_now = score_now + 1
+else:
+    print("Incorrect ;=;")
+    score_now = score_now
+if score_now == 1:
+    print("You got 1 question correct so far!")
+else:
+    print(f"You got {score_now} questions correct so far!")
+
+# Question 5
+
+print("""How many fingers does a normal human being have in total?
+    A: 0
+    B: 5
+    C: 10""")
+ans = input()
+if ans == C:
+    print("Correct!")
+    score_now = score_now + 1
+else:
+    print("Incorrect ;=;")
+if score_now == 1:
+    print("You got 1 question correct so far!")
+else:
+    print(f"You got {score_now} questions correct so far!")
+
+print("Congratulations! you have finished the quiz!")
+print(f"You got {score_now} questions out of 5 questions correct amd a percentage of "{score_now} / 5"")
+
+
