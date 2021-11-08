@@ -70,8 +70,8 @@ print("""How many fingers does a normal human being have in total?
     A: 0
     B: 5
     C: 10""")
-ans = input()
-if ans == "C":
+ans = input().lower()
+if ans == "c":
     print("Correct!")
     score_now = score_now + 1
 else:
